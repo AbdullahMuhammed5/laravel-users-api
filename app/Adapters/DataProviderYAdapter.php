@@ -10,7 +10,7 @@ class DataProviderYAdapter implements DataSourceInterface
     const CHUNK_SIZE = 1000;
 
     public function __construct(){
-        $this->statusCode =[
+        $this->statusCode = [
             '100'  => 'authorised',
             '200'  => 'decline',
             '300'  => 'refunded'
