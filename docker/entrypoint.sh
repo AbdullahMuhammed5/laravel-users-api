@@ -11,15 +11,7 @@ else
     echo "env file exists."
 fi
 
-# Wait for the database to become available
-until php artisan migrate:status &> /dev/null; do
-    echo "Waiting for the database..."
-    sleep 2
-done
-
 php artisan config:clear
-php artisan migrate
-php artisan optimize
 php artisan view:cache
 
 php-fpm -D

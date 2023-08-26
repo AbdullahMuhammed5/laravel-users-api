@@ -6,10 +6,6 @@ ENV PHP_OPCACHE_ENABLE=1
 ENV PHP_OPCACHE_ENABLE_CLI=0
 ENV PHP_OPCACHE_VALIDATE_TIMESTAMPS=0
 ENV PHP_OPCACHE_REVALIDATE_FREQ=0
-ENV USER_ID=$USER_ID
-ENV USER_NAME=$USER_NAME
-ENV GROUP_ID=$GROUP_ID
-ENV GROUP_NAME=$GROUP_NAME
 
 # Install dependencies.
 RUN apt-get update && apt-get install -y unzip libpq-dev libcurl4-gnutls-dev nginx libonig-dev
@@ -49,10 +45,6 @@ RUN chmod -R 755 /var/www/storage/logs
 RUN chmod -R 755 /var/www/storage/framework
 RUN chmod -R 755 /var/www/storage/framework/sessions
 RUN chmod -R 755 /var/www/bootstrap
-
-# Adjust user permission & group
-RUN usermod --uid $USER_ID $USER_NAME
-RUN groupmod --gid $USER_ID $G
 
 # Run the entrypoint file.
 ENTRYPOINT [ "docker/entrypoint.sh" ]

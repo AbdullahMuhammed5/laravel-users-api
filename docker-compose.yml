@@ -3,7 +3,6 @@ services:
     api:
         container_name: api
         restart: unless-stopped
-#        user: "www-data:www-data"
         build:
             context: .
             target: php
