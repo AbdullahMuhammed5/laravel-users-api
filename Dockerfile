@@ -44,7 +44,6 @@ RUN chown -R www-data:www-data /var/www/storage/framework
 RUN chown -R www-data:www-data /var/www/storage/framework/sessions
 
 # Set correct permission.
-
 RUN chmod -R 755 /var/www/storage
 RUN chmod -R 755 /var/www/storage/logs
 RUN chmod -R 755 /var/www/storage/framework
