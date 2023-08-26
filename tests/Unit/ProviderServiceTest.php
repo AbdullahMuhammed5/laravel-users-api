@@ -4,7 +4,7 @@ namespace Tests\Unit;
 
 use App\Http\Controllers\DataProviderXAdapter;
 use App\Services\ProviderService;
-use PHPUnit\Framework\TestCase;
+use Tests\TestCase;
 
 class ProviderServiceTest extends TestCase
 {
