@@ -21,23 +21,31 @@ Please make sure you have docker and docker-compose installed on your machine.
     ```
     git clone git@github.com:AbdullahMuhammed5/laravel-users-api.git
    ```
-2. Create a `.env` file by copying `.env.example` and updating the necessary configurations, including database settings.
+2. Navigate to the project directory.
+    ```
+    cd laravel-users-api
+   ```
+3. Install project packages and dependencies.
+    ```
+    composer install
+   ```
+4. Create a `.env` file by copying `.env.example` and updating the necessary configurations, including database settings.
    ```
     cp .env.example .env
    ```
-3. Generate an application kay:
+5. Generate an application kay:
    ```
    php artisan key:generate
    ```
-4. Build the Docker image for the application:
+6. Build the Docker image for the application:
    ```
    docker-compose up --build
    ```
-5. Start the application and its services using Docker Compose:
+7. Start the application and its services using Docker Compose:
    ```
    docker-compose up -d
    ```
-6. Access the Laravel application by visiting `http://localhost:9000` in your web browser.
+8. Access the Laravel application by visiting `http://localhost:9000` in your web browser.
 
 ## API Documentation
 
