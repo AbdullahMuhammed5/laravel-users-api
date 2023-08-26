@@ -19,13 +19,13 @@ Please make sure you have docker and docker-compose installed on your machine.
 
 1. Clone this repository.
     ```
-    git clone 
+    git clone git@github.com:AbdullahMuhammed5/laravel-users-api.git
    ```
 2. Create a `.env` file by copying `.env.example` and updating the necessary configurations, including database settings.
    ```
     cp .env.example .env
    ```
-4. Generate an application kay:
+3. Generate an application kay:
    ```
    php artisan key:generate
    ```
@@ -33,11 +33,11 @@ Please make sure you have docker and docker-compose installed on your machine.
    ```
    docker-compose up --build
    ```
-4. Start the application and its services using Docker Compose:
+5. Start the application and its services using Docker Compose:
    ```
    docker-compose up -d
    ```
-5. Access the Laravel application by visiting `http://localhost:9000` in your web browser.
+6. Access the Laravel application by visiting `http://localhost:9000` in your web browser.
 
 ## API Documentation
 
@@ -71,3 +71,10 @@ To stop the application and its services, run:
 ```
 docker-compose down
 ```
+
+## Todo
+
+1. Add file path as a parameter to the provider adaptor to not force use the existing json files.
+2. Add unit tests for DataProviders.
+3. Add filter builder.
+4. Add mock test for the getUser api.

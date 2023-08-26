@@ -1,9 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Filters;
 
 use App\Http\Interfaces\FilterInterface;
-use Illuminate\Http\Request;
 
 class CurrencyFilter implements FilterInterface {
     public function filter($data, $request) {

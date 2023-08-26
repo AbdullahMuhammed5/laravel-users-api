@@ -2,7 +2,7 @@
 
 namespace Tests\Unit;
 
-use App\Http\Controllers\StatusFilter;
+use App\Filters\StatusFilter;
 use Illuminate\Http\Request;
 use PHPUnit\Framework\TestCase;
 

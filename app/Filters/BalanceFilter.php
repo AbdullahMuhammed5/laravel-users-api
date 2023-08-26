@@ -1,9 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Filters;
 
 use App\Http\Interfaces\FilterInterface;
-use Illuminate\Http\Request;
 
 class BalanceFilter implements FilterInterface {
     const DEFULT_MAX_BALANCE = 1000000;

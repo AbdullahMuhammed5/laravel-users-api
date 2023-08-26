@@ -2,8 +2,8 @@
 
 namespace App\Services;
 
-use App\Http\Controllers\DataProviderXAdapter;
-use App\Http\Controllers\DataProviderYAdapter;
+use App\Adapters\DataProviderXAdapter;
+use App\Adapters\DataProviderYAdapter;
 use App\Http\Interfaces\DataSourceInterface;
 
 class ProviderService

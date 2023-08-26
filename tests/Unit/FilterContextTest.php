@@ -2,7 +2,7 @@
 
 namespace Tests\Unit;
 
-use App\Http\Controllers\FilterContext;
+use App\Filters\FilterContext;
 use App\Http\Interfaces\FilterInterface;
 use Illuminate\Http\Request;
 use PHPUnit\Framework\TestCase;

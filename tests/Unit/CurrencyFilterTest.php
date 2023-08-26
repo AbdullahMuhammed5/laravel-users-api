@@ -2,7 +2,7 @@
 
 namespace Tests\Unit;
 
-use App\Http\Controllers\CurrencyFilter;
+use App\Filters\CurrencyFilter;
 use Illuminate\Http\Request;
 use PHPUnit\Framework\TestCase;
 

@@ -1,10 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Adapters;
 
 use App\Http\Interfaces\DataSourceInterface;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
 
 class DataProviderXAdapter implements DataSourceInterface
 {

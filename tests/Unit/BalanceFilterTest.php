@@ -2,7 +2,7 @@
 
 namespace Tests\Unit;
 
-use App\Http\Controllers\BalanceFilter;
+use App\Filters\BalanceFilter;
 use Illuminate\Http\Request;
 use PHPUnit\Framework\TestCase;
 

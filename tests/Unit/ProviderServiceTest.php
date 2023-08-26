@@ -2,7 +2,7 @@
 
 namespace Tests\Unit;
 
-use App\Http\Controllers\DataProviderXAdapter;
+use App\Adapters\DataProviderXAdapter;
 use App\Services\ProviderService;
 use Tests\TestCase;
 

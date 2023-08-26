@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Filters\BalanceFilter;
+use App\Filters\CurrencyFilter;
+use App\Filters\FilterContext;
+use App\Filters\StatusFilter;
 use App\Services\ProviderService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
